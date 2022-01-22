@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name>Learners Academy</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>authenticate</servlet-name>
+    <servlet-class>com.servlets.AuthenticationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>authenticate</servlet-name>
+    <url-pattern>/authenticate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>com.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>dashboard</servlet-name>
+    <servlet-class>com.servlets.AdminDashboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dashboard</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateStudents</servlet-name>
+    <servlet-class>com.servlets.UpdateStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateStudents</servlet-name>
+    <url-pattern>/updateStudents</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addMasterData</servlet-name>
+    <servlet-class>com.servlets.AddMasterDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addMasterData</servlet-name>
+    <url-pattern>/addMasterData</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateTeachersAndSub</servlet-name>
+    <servlet-class>com.servlets.UpdateTeachersAndSub</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateTeachersAndSub</servlet-name>
+    <url-pattern>/updateTeachersAndSub</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
